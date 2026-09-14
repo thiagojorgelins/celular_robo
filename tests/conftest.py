@@ -5,6 +5,10 @@ import pytest
 
 from celular_robo.fabrica import criar_robo_configurado
 
+@pytest.fixture
+def caminho_dados(pytestconfig):
+    return pytestconfig.rootpath / "dados"
+
 
 @pytest.fixture
 def pedido_valido():
