@@ -8,6 +8,7 @@
 from celular_robo.robo_base import Robo
 from celular_robo.estrategias import RotaColeta
 from celular_robo.excecoes import ConfiguracaoInvalida
+import celular_robo.robo
 
 TIPOS_VALIDOS = set(Robo._registro)
 ESTRATEGIAS_VALIDAS = set(RotaColeta._registro_rotas)
